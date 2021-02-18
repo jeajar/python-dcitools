@@ -97,6 +97,7 @@ REQUESTS = (
         E('type', int_to_bytes, bit=8),
     ]),
     M('GetAPIProtocolVersion', '050500'),  # BGI
+    M('GetDataDiskSpaceUsage', '080100'),
 
     # LOGS
     M('GetLog', '110100', [  # BGI

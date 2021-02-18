@@ -325,6 +325,12 @@ RESPONSES = (
         E('version_minor', 1, 2, bytes_to_int),
         E('version_build', 2, 3, bytes_to_int),
     ]),
+    M('GetDataDiskSpaceUsage', '080200', [
+        E('size', 0, 8, bytes_to_int),
+        E('used', 8, 16, bytes_to_int),
+        E('available', 16, 32, bytes_to_int),
+        E('response', -1, None, bytes_to_int),
+    ]),
 
     # INGEST
     M('IngestAddJob', '071000', [
